@@ -1,0 +1,7 @@
+<ul class="unstyled">
+  <li ng-repeat="item in basket.get()">
+    {{item.quantity}}x <product type="item.type"></product>
+    <a href class="btn btn-danger" ng-click="basket.remove(item)">Remove</a>
+  </li>
+</ul>
+<p ng-show="basket.count() == 0">Your basket is empty!</p>
