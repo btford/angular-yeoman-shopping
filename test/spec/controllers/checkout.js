@@ -1,17 +1,17 @@
 'use strict';
 
-describe('Controller: BasketCtrl', function() {
+describe('Controller: CheckoutCtrl', function() {
 
   // load the controller's module
   beforeEach(module('shoppingApp'));
 
-  var BasketCtrl,
+  var CheckoutCtrl,
     scope;
 
   // Initialize the controller and a mock scope
   beforeEach(inject(function($controller) {
     scope = {};
-    BasketCtrl = $controller('BasketCtrl', {
+    CheckoutCtrl = $controller('CheckoutCtrl', {
       $scope: scope
     });
   }));

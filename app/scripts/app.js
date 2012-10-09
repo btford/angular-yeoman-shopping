@@ -11,6 +11,10 @@ var shoppingApp = angular.module('shoppingApp', [])
         templateUrl: 'views/basket.html',
         controller: 'BasketCtrl'
       })
+      .when('/checkout', {
+        templateUrl: 'views/checkout.html',
+        controller: 'CheckoutCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });

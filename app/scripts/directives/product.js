@@ -2,9 +2,10 @@
 
 shoppingApp.directive('product', function() {
   return {
-    template: '<img ng-src="{{type.img}}" width="200px">' +
+    template: '<h4>{{type.name}}</h4>' +
+      '<img ng-src="{{type.img}}" width="200px">' +
       '<div>' +
-        '{{type.name}} | {{type.price | currency}}' +
+        '<p>Price: {{type.price | currency}}</p>' +
       '</div>',
     restrict: 'E',
     scope: {
